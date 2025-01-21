@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Szamologep
 {
-	internal class Program
+	doubleernal class Program
 	{
 		static void Main(string[] args)
 		{
@@ -18,9 +18,9 @@ namespace Szamologep
 		private static void Indit()
 		{
 			Console.Write("Kérem adja meg az első számot: ");
-			int szam1 = int.Parse(Console.ReadLine());
+			double szam1 = double.Parse(Console.ReadLine());
 			Console.Write("Kérem adja meg a második számot: ");
-			int szam2 = int.Parse(Console.ReadLine());
+			double szam2 = double.Parse(Console.ReadLine());
 			Console.Write("Az elvégzendő művelet jele: ");
 			char muvelet = char.Parse(Console.ReadLine());
 
@@ -46,22 +46,22 @@ namespace Szamologep
 			}
 		}
 
-		private static double Osztas(int szam1, int szam2)
+		private static double Osztas(double szam1, double szam2)
 		{
 			return (double)szam1 / szam2;
 		}
 
-		private static int Szorzas(int szam1, int szam2)
+		private static double Szorzas(double szam1, double szam2)
 		{
 			return szam1 * szam2;
 		}
 
-		private static int Kivonas(int szam1, int szam2)
+		private static double Kivonas(double szam1, double szam2)
 		{
 			return szam1 / szam2;
 		}
 
-		private static int Osszeadas(int szam1, int szam2)
+		private static double Osszeadas(double szam1, double szam2)
 		{
 			return szam1 + szam2;
 		}
