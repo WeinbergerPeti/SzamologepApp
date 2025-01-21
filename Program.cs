@@ -25,8 +25,17 @@ namespace Szamologep
 			{
 				Console.WriteLine($"{szam1} {muvelet} {szam2} = {Kivonas(szam1, szam2)}");
 			}
+			else if (muvelet.Equals('*'))
+			{
+				Console.WriteLine($"{szam1} {muvelet} {szam2} = {Szorzas(szam1, szam2)}");
+			}
 
 			Console.ReadKey();
+		}
+
+		private static int Szorzas(int szam1, int szam2)
+		{
+			return szam1 * szam2;
 		}
 
 		private static int Kivonas(int szam1, int szam2)
