@@ -19,10 +19,19 @@ namespace Szamologep
 			
 			if (muvelet.Equals('+'))
 			{
-				Osszeadas(szam1, szam2);
+				Console.WriteLine($"{szam1} {muvelet} {szam2} = {Osszeadas(szam1, szam2)}");
+			}
+			else if (muvelet.Equals("-"))
+			{
+				Console.WriteLine($"{szam1} {muvelet} {szam2} = {Kivonas(szam1, szam2)}");
 			}
 
 			Console.ReadKey();
+		}
+
+		private static int Kivonas(int szam1, int szam2)
+		{
+			return szam1 / szam2;
 		}
 
 		private static int Osszeadas(int szam1, int szam2)
