@@ -10,13 +10,20 @@ namespace Szamologep
 	{
 		static void Main(string[] args)
 		{
+			Indit();
+
+			Console.ReadKey();
+		}
+
+		private static void Indit()
+		{
 			Console.Write("Kérem adja meg az első számot: ");
 			int szam1 = int.Parse(Console.ReadLine());
 			Console.Write("Kérem adja meg a második számot: ");
 			int szam2 = int.Parse(Console.ReadLine());
 			Console.Write("Az elvégzendő művelet jele: ");
 			char muvelet = char.Parse(Console.ReadLine());
-			
+
 			if (muvelet.Equals('+'))
 			{
 				Console.WriteLine($"{szam1} {muvelet} {szam2} = {Osszeadas(szam1, szam2)}");
@@ -33,9 +40,10 @@ namespace Szamologep
 			{
 				Console.WriteLine($"{szam1} {muvelet} {szam2} = {Osztas(szam1, szam2):F2}");
 			}
-
-
-			Console.ReadKey();
+			else
+			{
+				Console.WriteLine("Nem megfelelő műveletjelet adott meg!");
+			}
 		}
 
 		private static double Osztas(int szam1, int szam2)
