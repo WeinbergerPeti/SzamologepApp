@@ -1,0 +1,7 @@
+D:\OneDrive - Óbudai egyetem\Korrepetációs tananyagok\C#\Tanulóim\Mohamed\Szamologep\Szamologep\bin\Debug\Szamologep.exe.config
+D:\OneDrive - Óbudai egyetem\Korrepetációs tananyagok\C#\Tanulóim\Mohamed\Szamologep\Szamologep\bin\Debug\Szamologep.exe
+D:\OneDrive - Óbudai egyetem\Korrepetációs tananyagok\C#\Tanulóim\Mohamed\Szamologep\Szamologep\bin\Debug\Szamologep.pdb
+D:\OneDrive - Óbudai egyetem\Korrepetációs tananyagok\C#\Tanulóim\Mohamed\Szamologep\Szamologep\obj\Debug\Szamologep.csproj.AssemblyReference.cache
+D:\OneDrive - Óbudai egyetem\Korrepetációs tananyagok\C#\Tanulóim\Mohamed\Szamologep\Szamologep\obj\Debug\Szamologep.csproj.CoreCompileInputs.cache
+D:\OneDrive - Óbudai egyetem\Korrepetációs tananyagok\C#\Tanulóim\Mohamed\Szamologep\Szamologep\obj\Debug\Szamologep.exe
+D:\OneDrive - Óbudai egyetem\Korrepetációs tananyagok\C#\Tanulóim\Mohamed\Szamologep\Szamologep\obj\Debug\Szamologep.pdb

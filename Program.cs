@@ -14,7 +14,7 @@ namespace Szamologep
 			int szam1 = int.Parse(Console.ReadLine());
 			Console.Write("Kérem adja meg a második számot: ");
 			int szam2 = int.Parse(Console.ReadLine());
-			Console.Write("Az elvégzendő művelet jele");
+			Console.Write("Az elvégzendő művelet jele: ");
 			char muvelet = char.Parse(Console.ReadLine());
 			
 			if (muvelet.Equals('+'))
@@ -29,8 +29,18 @@ namespace Szamologep
 			{
 				Console.WriteLine($"{szam1} {muvelet} {szam2} = {Szorzas(szam1, szam2)}");
 			}
+			else if (muvelet.Equals('/'))
+			{
+				Console.WriteLine($"{szam1} {muvelet} {szam2} = {Osztas(szam1, szam2):F2}");
+			}
+
 
 			Console.ReadKey();
+		}
+
+		private static double Osztas(int szam1, int szam2)
+		{
+			return (double)szam1 / szam2;
 		}
 
 		private static int Szorzas(int szam1, int szam2)
