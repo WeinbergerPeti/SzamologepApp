@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Szamologep
 {
-	doubleernal class Program
+	internal class Program
 	{
 		static void Main(string[] args)
 		{
@@ -40,15 +40,24 @@ namespace Szamologep
 			{
 				Console.WriteLine($"{szam1} {muvelet} {szam2} = {Osztas(szam1, szam2):F2}");
 			}
+			else if (muvelet.Equals('%'))
+			{
+				Console.WriteLine($"{szam1} {muvelet} {szam2} = {Szazalek(szam1, szam2):F2}");
+			}
 			else
 			{
 				Console.WriteLine("Nem megfelelő műveletjelet adott meg!");
 			}
 		}
 
+		private static double Szazalek(double szam1, double szam2)
+		{
+			return (szam1 / szam2) * 100;
+		}
+
 		private static double Osztas(double szam1, double szam2)
 		{
-			return (double)szam1 / szam2;
+			return szam1 / szam2;
 		}
 
 		private static double Szorzas(double szam1, double szam2)
