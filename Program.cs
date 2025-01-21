@@ -26,30 +26,33 @@ namespace Szamologep
 
 			if (muvelet.Equals('+'))
 			{
-				Console.WriteLine($"{szam1} {muvelet} {szam2} = {Osszeadas(szam1, szam2)}");
+				kiir(szam1, szam2, muvelet, Osszeadas);
 			}
 			else if (muvelet.Equals("-"))
 			{
-				Console.WriteLine($"{szam1} {muvelet} {szam2} = {Kivonas(szam1, szam2)}");
+				kiir(szam1, szam2, muvelet, Kivonas);
 			}
 			else if (muvelet.Equals('*'))
 			{
-				Console.WriteLine($"{szam1} {muvelet} {szam2} = {Szorzas(szam1, szam2)}");
+				kiir(szam1, szam2, muvelet, Szorzas);
 			}
 			else if (muvelet.Equals('/'))
 			{
-				Console.WriteLine($"{szam1} {muvelet} {szam2} = {Osztas(szam1, szam2):F2}");
+				kiir(szam1, szam2, muvelet, Osztas);
 			}
 			else if (muvelet.Equals('%'))
 			{
-				Console.WriteLine($"{szam1} {muvelet} {szam2} = {Szazalek(szam1, szam2):F2}");
+				kiir(szam1, szam2, muvelet, Szazalek);
 			}
 			else
 			{
 				Console.WriteLine("Nem megfelelő műveletjelet adott meg!");
 			}
 		}
-
+		static void kiir(double szam1, double szam2, char muvelet, Func<double, double, double> metodus)
+		{
+			Console.WriteLine($"{szam1} {muvelet} {szam2} = {metodus(szam1, szam2)}");
+		}
 		private static double Szazalek(double szam1, double szam2)
 		{
 			return (szam1 / szam2) * 100;
